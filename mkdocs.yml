@@ -1,0 +1,40 @@
+site_name: neuralartstudio
+site_description: App for experimenting and creating your own art using neural style transfer
+site_author: Soumendra Dhanee
+
+repo_url: https://github.com/soumendra/neuralartstudio
+edit_uri: ""
+
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+
+nav:
+  - Home: index.md
+  - User Guide:
+      - Your first style transfer project: user-guide/your-first-style-transfer-project.md
+  - About:
+      - Release Notes: about/release-notes.md
+      - Contributing: about/contributing.md
+      - License: about/license.md
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - toc:
+      permalink: 
+  - admonition
+  - def_list
+  - mdx_gh_links:
+      user: soumendra
+      repo: labeltext
+
+copyright: Copyright &copy; 2020 <a href="https://twitter.com/dataBiryani">Soumendra Dhanee</a>
+google_analytics: ["UA-2688259-1", "labeltext"]
+
+plugins:
+  - search
